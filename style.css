@@ -84,7 +84,7 @@ body {
 form {
   background-color: #ffffff;  
   box-shadow: 0 5px 5px #e0e0e0;
-  border: 1px rgb(236, 236, 236) solid;
+  border: 1px #E5E7EB solid;
   padding: 1.5rem 2rem;
   margin-top: 2rem;
 }
@@ -112,7 +112,7 @@ section > :not(form) {
 
 input {
   padding: 7px;
-  border: 1px solid rgb(212, 212, 212);
+  border: 1px solid #E5E7EB;
   font-size: 1rem;
   border-radius: 0.25rem;
 }
@@ -138,5 +138,32 @@ section > p > a {
 
 .bottom-para {
   margin-bottom: 2rem;
+}
+
+input:focus {
+  border: 1px solid blue;
+  box-shadow: 2px 3px 3px rgb(231, 231, 231);
+  outline: none;
+}
+
+input[type="password"]:invalid {
+  border: 1px solid red;
+  outline: none;
+}
+
+input + span {
+  position: relative;
+}
+
+input + span::before {
+  position: absolute;
+  display: block;
+}
+
+input[type="password"]:invalid + span::before {
+  content: "*Passwords do not match";
+  font-size: 0.70rem;
+  color: red;
+  margin-top: 2px;
 }
 
