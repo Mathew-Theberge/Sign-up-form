@@ -1,8 +1,8 @@
 @font-face {
   font-family: "norse";
   src: 
-    url(/fonts/fonts/norse-bold-webfont.woff2) format("woff2"),
-    url(/fonts/fonts/norse-bold-webfont.woff) format("woff");
+    url(./fonts/fonts/norse-bold-webfont.woff2) format("woff2"),
+    url(./fonts/fonts/norse-bold-webfont.woff) format("woff");
 }
 
 * {
